@@ -1,0 +1,44 @@
+extends base
+block head
+  link(rel='stylesheet', href='/css/score.css', type='text/css')
+block content 
+  <section class="score">
+    include nav
+    -var you=scores[scores.length-1]
+    -var newScore= scores.sort((a, b) => (a.timer > b.timer ? -1 : 1))
+    -var rank=newScore.indexOf(you)+1
+    .score-content-container
+      <div class="header">
+        <h1>Congratulations, #{you.username}! 
+        <h4>You have survived #{you.timer} seconds! and ranked top #{rank}</h4>
+      </div>
+      .scoreboard
+        .rank-2-container.rank-container
+          .rank-2-content.rank-content
+            .score-2.second #{newScore[1].timer} Sec
+            .username-2.name #{newScore[1].username}
+          .rank-2-podium.podium 
+            .rank 2
+        .rank-1-container.rank-container
+          .rank-1-content.rank-content
+            .score-1.second #{newScore[0].timer} Sec
+            .username-1.name #{newScore[0].username} 
+          .rank-1-podium.podium 
+            .rank 1
+        .rank-3-container.rank-container
+          .rank-3-content.rank-content
+            .score-3.second #{newScore[2].timer} Sec
+            .username-3.name #{newScore[2].username}
+          .rank-3-podium.podium 
+            .rank 3
+      <div class="score-btn">
+        <form action="/travel" method="get">
+          <button class="btn" type="submit" >Try Again</button>
+        </form>
+        <form action="/" method="get">
+          <button  class="btn" type="submit" >Return Home</button>
+        </form>
+      </div>
+    <canvas class="canvas"></canvas> 
+  </section>
+  script(src="/js/score.js")

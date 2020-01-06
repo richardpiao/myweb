@@ -1,0 +1,376 @@
+@import url("base.css");
+
+/* /////////////start here/////////////// */
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.canvas-3d {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 30%;
+  height: 30vw;
+  border-radius: 100%;
+}
+
+/* /////////////left content//////////// */
+.contact-left {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 35vw;
+}
+
+h1 {
+  font-size: 2vw;
+  color: #ffffff;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.el {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.5vw;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.el:focus {
+  outline: none;
+}
+
+.el-message {
+  height: 80%;
+}
+
+.el-submit {
+  font-size: 1.2vw;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: none;
+  margin-top: 10px;
+  padding: 1vw 3vw;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.el-submit:focus {
+  outline: none;
+}
+
+.el-submit:hover {
+  color: #ffffff;
+  background: rgb(97, 218, 251);
+  box-shadow: rgb(97, 218, 251) 0px 0px 150px;
+  border: 1px solid rgb(97, 218, 251);
+}
+
+.sent {
+  color: #ffffff;
+  background: rgb(97, 218, 251);
+  box-shadow: rgb(97, 218, 251) 0px 0px 150px;
+  border: 1px solid rgb(97, 218, 251);
+}
+
+label {
+  color: #ffffff;
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+}
+
+/* ////////////////clock/////////////////// */
+.contact-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  transform-origin: center;
+}
+
+.container>div {
+  transition: all 1s ease-out;
+  width: 100%;
+  position: absolute;
+  text-align: right;
+}
+
+.btn-language {
+  color: #ffffff;
+  text-shadow: rgba(255, 255, 255, 1) 0px 0px 15px;
+  text-transform: uppercase;
+  background: none;
+  padding: 4px;
+  border: 1px solid #494949;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  animation: 3s flicking infinite;
+  z-index: 3;
+}
+
+@keyframes flicking {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.btn-language:focus {
+  outline: none;
+}
+
+.btn-language:hover {
+  color: black;
+  background-color: white;
+  animation: none;
+}
+
+#month {
+  width: 7vw;
+  height: 7vw;
+}
+
+#date {
+  width: 14vw;
+  height: 14vw;
+}
+
+#week {
+  width: 19vw;
+  height: 19vw;
+}
+
+#hour {
+  width: 25.5vw;
+  height: 25.5vw;
+}
+
+#min {
+  width: 32.5vw;
+  height: 32.5vw;
+}
+
+#sec {
+  width: 40vw;
+  height: 40vw;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .canvas-3d {
+    display: none;
+  }
+
+  /* /////////////left content//////////// */
+  .contact-left {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+
+  .el {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 2.5vw;
+    color: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .el:focus {
+    outline: none;
+  }
+
+  .el-message {
+    height: 50%;
+  }
+
+  .el-submit {
+    font-size: 3vw;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: none;
+    margin-top: 10px;
+    padding: 2vw 4vw;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .el-submit:focus {
+    outline: none;
+  }
+
+  .el-submit:hover {
+    color: #ffffff;
+    background: rgb(97, 218, 251);
+    box-shadow: rgb(97, 218, 251) 0px 0px 150px;
+    border: 1px solid rgb(97, 218, 251);
+  }
+
+  label {
+    color: #ffffff;
+    font-size: 2vw;
+    margin-bottom: 10px;
+  }
+
+  /* ////////////////clock/////////////////// */
+  .contact-right {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    transform-origin: center;
+  }
+
+  .container>div {
+    transition: all 1s ease-out;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+  }
+
+  .btn-language {
+    color: #ffffff;
+    text-shadow: rgba(255, 255, 255, 1) 0px 0px 15px;
+    text-transform: uppercase;
+    background: none;
+    padding: 4px;
+    border: 1px solid #494949;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    animation: 3s flicking infinite;
+    z-index: 3;
+  }
+
+  @keyframes flicking {
+    0% {
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 1;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  .btn-language:focus {
+    outline: none;
+  }
+
+  .btn-language:hover {
+    color: black;
+    background-color: white;
+    animation: none;
+  }
+
+  #month {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #date {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  #week {
+    width: 19vw;
+    height: 19vw;
+  }
+
+  #hour {
+    width: 25.5vw;
+    height: 25.5vw;
+  }
+
+  #min {
+    width: 32.5vw;
+    height: 32.5vw;
+  }
+
+  #sec {
+    width: 40vw;
+    height: 40vw;
+  }
+}

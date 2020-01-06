@@ -1,0 +1,236 @@
+extends base
+block head
+	link(rel='stylesheet', href='/css/contact.css', type='text/css')
+block content
+	<section class="contact"> 
+		include nav
+		<div class="contact-left">
+			<h1>Time is ticking, email me now!</h1>
+			<form class="contact-form" action="/contact" method="post">
+				<label>Name</label>
+				<input  class="el el-name" type="text" name="name" required>
+				<label>Email</label>
+				<input class="el el-email" type="email" name="email" required>
+				<label>Message</label>
+				<textarea class="el el-message" name="message"></textarea>
+				<button class="el-submit" type="submit">Send</button>
+			</form>
+		</div>
+		<div class="contact-right">
+			<div class="container language">
+				<button type="button" class="btn btn-language">CH</button>
+			</div>
+			<div class="container" id="month">
+				<div class="month month0">一月</div>
+				<div class="month month1">二月</div>
+				<div class="month month2">三月</div>
+				<div class="month month3">四月</div>
+				<div class="month month4">五月</div>
+				<div class="month month5">六月</div>
+				<div class="month month6">七月</div>
+				<div class="month month7">八月</div>
+				<div class="month month8">九月</div>
+				<div class="month month9">十月</div>
+				<div class="month month10">十一月</div>
+				<div class="month month11">十二月</div>
+			</div>
+			<div class="container" id="date">
+				<div class="d d1">一号</div>
+				<div class="d d2">二号</div>
+				<div class="d d3">三号</div>
+				<div class="d d4">四号</div>
+				<div class="d d5">五号</div>
+				<div class="d d6">六号</div>
+				<div class="d d7">七号</div>
+				<div class="d d8">八号</div>
+				<div class="d d9">九号</div>
+				<div class="d d10">十号</div>
+				<div class="d d11">十一号</div>
+				<div class="d d12">十二号</div>
+				<div class="d d13">十三号</div>
+				<div class="d d14">十四号</div>
+				<div class="d d15">十五号</div>
+				<div class="d d16">十六号</div>
+				<div class="d d17">十七号</div>
+				<div class="d d18">十八号</div>
+				<div class="d d19">十九号</div>
+				<div class="d d20">二十号</div>
+				<div class="d d21">二十一号</div>
+				<div class="d d22">二十二号</div>
+				<div class="d d23">二十三号</div>
+				<div class="d d24">二十四号</div>
+				<div class="d d25">二十五号</div>
+				<div class="d d26">二十六号</div>
+				<div class="d d27">二十七号</div>
+				<div class="d d28">二十八号</div>
+				<div class="d d29">二十九号</div>
+				<div class="d d30">三十号</div>
+				<div class="d d31">三十一号</div>
+			</div>
+			<div class="container" id="week">
+				<div class="w week0">周日</div>
+				<div class="w week1">周一</div>
+				<div class="w week2">周二</div>
+				<div class="w week3">周三</div>
+				<div class="w week4">周四</div>
+				<div class="w week5">周五</div>
+				<div class="w week6">周六</div>
+			</div>
+			<div class="container" id="hour">
+				<div class="h h0">零点</div>
+				<div class="h h1">一点</div>
+				<div class="h h2">二点</div>
+				<div class="h h3">三点</div>
+				<div class="h h4">四点</div>
+				<div class="h h5">五点</div>
+				<div class="h h6">六点</div>
+				<div class="h h7">七点</div>
+				<div class="h h8">八点</div>
+				<div class="h h9">九点</div>
+				<div class="h h10">十点</div>
+				<div class="h h11">十一点</div>
+				<div class="h h12">十二点</div>
+				<div class="h h13">十三点</div>
+				<div class="h h14">十四点</div>
+				<div class="h h15">十五点</div>
+				<div class="h h16">十六点</div>
+				<div class="h h17">十七点</div>
+				<div class="h h18">十八点</div>
+				<div class="h h19">十九点</div>
+				<div class="h h20">二十点</div>
+				<div class="h h21">二十一点</div>
+				<div class="h h22">二十二点</div>
+				<div class="h h23">二十三点</div>
+			</div>
+			<div class="container" id="min">
+				<div class="m m0">零分</div>
+				<div class="m m1">一分</div>
+				<div class="m m2">二分</div>
+				<div class="m m3">三分</div>
+				<div class="m m4">四分</div>
+				<div class="m m5">五分</div>
+				<div class="m m6">六分</div>
+				<div class="m m7">七分</div>
+				<div class="m m8">八分</div>
+				<div class="m m9">九分</div>
+				<div class="m m10">十分</div>
+				<div class="m m11">十一分</div>
+				<div class="m m12">十二分</div>
+				<div class="m m13">十三分</div>
+				<div class="m m14">十四分</div>
+				<div class="m m15">十五分</div>
+				<div class="m m16">十六分</div>
+				<div class="m m17">十七分</div>
+				<div class="m m18">十八分</div>
+				<div class="m m19">十九分</div>
+				<div class="m m20">二十分</div>
+				<div class="m m21">二十一分</div>
+				<div class="m m22">二十二分</div>
+				<div class="m m23">二十三分</div>
+				<div class="m m24">二十四分</div>
+				<div class="m m25">二十五分</div>
+				<div class="m m26">二十六分</div>
+				<div class="m m27">二十七分</div>
+				<div class="m m28">二十八分</div>
+				<div class="m m29">二十九分</div>
+				<div class="m m30">三十分</div>
+				<div class="m m31">三十一分</div>
+				<div class="m m32">三十二分</div>
+				<div class="m m33">三十三分</div>
+				<div class="m m34">三十四分</div>
+				<div class="m m35">三十五分</div>
+				<div class="m m36">三十六分</div>
+				<div class="m m37">三十七分</div>
+				<div class="m m38">三十八分</div>
+				<div class="m m39">三十九分</div>
+				<div class="m m40">四十分</div>
+				<div class="m m41">四十一分</div>
+				<div class="m m42">四十二分</div>
+				<div class="m m43">四十三分</div>
+				<div class="m m44">四十四分</div>
+				<div class="m m45">四十五分</div>
+				<div class="m m46">四十六分</div>
+				<div class="m m47">四十七分</div>
+				<div class="m m48">四十八分</div>
+				<div class="m m49">四十九分</div>
+				<div class="m m50">五十分</div>
+				<div class="m m51">五十一分</div>
+				<div class="m m52">五十二分</div>
+				<div class="m m53">五十三分</div>
+				<div class="m m54">五十四分</div>
+				<div class="m m55">五十五分</div>
+				<div class="m m56">五十六分</div>
+				<div class="m m57">五十七分</div>
+				<div class="m m58">五十八分</div>
+				<div class="m m59">五十九分</div>
+			</div>
+			<div class="container" id="sec">
+				<div class="s s0">零秒</div>
+				<div class="s s1">一秒</div>
+				<div class="s s2">二秒</div>
+				<div class="s s3">三秒</div>
+				<div class="s s4">四秒</div>
+				<div class="s s5">五秒</div>
+				<div class="s s6">六秒</div>
+				<div class="s s7">七秒</div>
+				<div class="s s8">八秒</div>
+				<div class="s s9">九秒</div>
+				<div class="s s10">十秒</div>
+				<div class="s s11">十一秒</div>
+				<div class="s s12">十二秒</div>
+				<div class="s s13">十三秒</div>
+				<div class="s s14">十四秒</div>
+				<div class="s s15">十五秒</div>
+				<div class="s s16">十六秒</div>
+				<div class="s s17">十七秒</div>
+				<div class="s s18">十八秒</div>
+				<div class="s s19">十九秒</div>
+				<div class="s s20">二十秒</div>
+				<div class="s s21">二十一秒</div>
+				<div class="s s22">二十二秒</div>
+				<div class="s s23">二十三秒</div>
+				<div class="s s24">二十四秒</div>
+				<div class="s s25">二十五秒</div>
+				<div class="s s26">二十六秒</div>
+				<div class="s s27">二十七秒</div>
+				<div class="s s28">二十八秒</div>
+				<div class="s s29">二十九秒</div>
+				<div class="s s30">三十秒</div>
+				<div class="s s31">三十一秒</div>
+				<div class="s s32">三十二秒</div>
+				<div class="s s33">三十三秒</div>
+				<div class="s s34">三十四秒</div>
+				<div class="s s35">三十五秒</div>
+				<div class="s s36">三十六秒</div>
+				<div class="s s37">三十七秒</div>
+				<div class="s s38">三十八秒</div>
+				<div class="s s39">三十九秒</div>
+				<div class="s s40">四十秒</div>
+				<div class="s s41">四十一秒</div>
+				<div class="s s42">四十二秒</div>
+				<div class="s s43">四十三秒</div>
+				<div class="s s44">四十四秒</div>
+				<div class="s s45">四十五秒</div>
+				<div class="s s46">四十六秒</div>
+				<div class="s s47">四十七秒</div>
+				<div class="s s48">四十八秒</div>
+				<div class="s s49">四十九秒</div>
+				<div class="s s50">五十秒</div>
+				<div class="s s51">五十一秒</div>
+				<div class="s s52">五十二秒</div>
+				<div class="s s53">五十三秒</div>
+				<div class="s s54">五十四秒</div>
+				<div class="s s55">五十五秒</div>
+				<div class="s s56">五十六秒</div>
+				<div class="s s57">五十七秒</div>
+				<div class="s s58">五十八秒</div>
+				<div class="s s59">五十九秒</div>
+			</div>
+		</div>
+		<canvas class="canvas-3d color-0"></canvas>
+		<canvas class="canvas"><canvas>
+	</section>
+	script(src="/js/bundle.js")
+	script(src="/js/clock.js")
+	
+	

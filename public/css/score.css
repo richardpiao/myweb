@@ -1,0 +1,291 @@
+@import url("base.css");
+
+/* ///////////game page/////////// */
+.score {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.score-content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 40vw;
+}
+
+.header {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h4 {
+  font-size: 1.8vw;
+}
+
+.scoreboard {
+  position: absolute;
+  width: 50vw;
+  height: 20vw;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.rank-container {
+  flex: 1;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.rank-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+}
+
+.rank {
+  color: #ffffff;
+  font-size: 4vw;
+}
+
+.second {
+  font-size: 1.5vw;
+}
+
+.name {
+  font-size: 3vw;
+}
+
+.rank-1-content {
+  width: 100%;
+  height: 50%;
+}
+
+.rank-1-podium {
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 215, 0, 1);
+}
+
+.rank-2-content {
+  width: 100%;
+  height: 60%;
+}
+
+.rank-2-podium {
+  width: 100%;
+  height: 40%;
+  background: #b87333;
+  border-right: none;
+}
+
+.rank-3-content {
+  width: 100%;
+  height: 70%;
+}
+
+.rank-3-podium {
+  width: 100%;
+  height: 30%;
+  background: #bec2cb;
+  border-left: none;
+}
+
+.score-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.5vw;
+  color: #ffffff;
+  background: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: rgb(97, 218, 251);
+  box-shadow: rgb(97, 218, 251) 0px 0px 150px;
+  border: 1px solid rgb(97, 218, 251);
+}
+
+@media only screen and (max-width: 850px) {
+  .score {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .score-content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 80vw;
+
+  }
+
+  .header {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 5vw;
+    width: 100vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+    width: 100%;
+  }
+
+  .scoreboard {
+    position: absolute;
+    width: 60vw;
+    height: 30vw;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    color: #ffffff;
+    font-size: 4vw;
+  }
+
+  .rank-container {
+    flex: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .rank-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .podium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+  }
+
+  .rank {
+    color: #ffffff;
+    font-size: 5vw;
+  }
+
+  .second {
+    font-size: 2vw;
+  }
+
+  .name {
+    font-size: 3.5vw;
+  }
+
+  .rank-1-content {
+    width: 100%;
+    height: 50%;
+  }
+
+  .rank-1-podium {
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 215, 0, 1);
+  }
+
+  .rank-2-content {
+    width: 100%;
+    height: 60%;
+  }
+
+  .rank-2-podium {
+    width: 100%;
+    height: 40%;
+    background: #b87333;
+    border-right: none;
+  }
+
+  .rank-3-content {
+    width: 100%;
+    height: 70%;
+  }
+
+  .rank-3-podium {
+    width: 100%;
+    height: 30%;
+    background: #bec2cb;
+    border-left: none;
+  }
+
+  .score-btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 2.5vw;
+    color: #ffffff;
+    background: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    color: #ffffff;
+    background-color: rgb(97, 218, 251);
+    box-shadow: rgb(97, 218, 251) 0px 0px 150px;
+    border: 1px solid rgb(97, 218, 251);
+  }
+}
