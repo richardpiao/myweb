@@ -1,5 +1,6 @@
 <h1>This website is desgined and created by Richard Piao</h1>
 <a href="https://richardpiao.herokuapp.com/">Click here to visit website or type www.richardpiao.com</a>
+<p>You may experience longer load time due to website sleeps after 30min inactivity</p>
 <p>last update was on Jan 6th 2020</p>
 <ul><h4>Here are feartures I have in my website</h></ul>
 <li>If you hover background stars, it will change color</li>
