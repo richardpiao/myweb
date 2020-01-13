@@ -9,7 +9,7 @@ const dotenv = require("dotenv");
 dotenv.config({
   path: "./config.env"
 });
-
+const port = process.env.PORT
 app.use(bodyParser());
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
@@ -85,4 +85,4 @@ app.post("/contact", (req, res) => {
     }
   });
 });
-app.listen(8080, () => console.log("=============app is started=========="));
+app.listen(port, () => console.log("=============app is started=========="));
