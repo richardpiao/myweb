@@ -9,7 +9,7 @@ const dotenv = require("dotenv");
 dotenv.config({
   path: "./config.env"
 });
-const port = process.env.PORT
+const port = process.env.PORT||8080
 app.use(bodyParser());
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
