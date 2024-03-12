@@ -18,6 +18,10 @@
   border-radius: 100%;
 }
 
+.canvas-3d:hover{
+  cursor: pointer;
+}
+
 /* /////////////left content//////////// */
 .contact-left {
   position: absolute;
